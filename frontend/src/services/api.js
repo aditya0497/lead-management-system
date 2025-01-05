@@ -37,7 +37,6 @@ const api = {
     const response = await axios.post(`${BASE_URL}/interactions`, interaction);
     return response.data;
   }
-  
 };
 
 export default api;
