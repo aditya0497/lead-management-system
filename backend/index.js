@@ -10,7 +10,10 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: '*', // Or specify the allowed domains here
+  methods: ['GET', 'POST', 'DELETE'],
+}));
 app.use(express.json());
 
 // Routes
