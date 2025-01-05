@@ -21,7 +21,7 @@ app.use('/api', leadRoutes); // Routes for leads
 app.use('/api', interactionRoutes); // Routes for interactions
 
 // Start server
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
